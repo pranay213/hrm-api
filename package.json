@@ -2,7 +2,7 @@
   "name": "hrm-api",
   "version": "1.0.0",
   "description": "",
-  "type": "commonjs",
+  "main": "server.js",
   "scripts": {
     "build": "npm run clean && npm run tscbuild && npm run esbuild",
     "clean": "rm -rf dist build",
@@ -10,7 +10,7 @@
     "copy-env": "cp .env dist/",
     "copy-package": "cp package.json build/",
     "tscbuild": "tsc && npx tscpaths -p tsconfig.json -s ./src -o ./dist && npm run copy-env && npm run copy-swagger",
-    "esbuild": "rm -rf build && esbuild src/server.ts --outfile=build/server.js",
+    "esbuild": "rimraf build && esbuild src/server.ts --bundle --minify --platform=node --sourcemap --outfile=build/server.js --external:*.html",
     "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
