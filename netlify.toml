@@ -1,0 +1,7 @@
+[build]
+command = "cp -r dist/* ."
+
+[redirects]
+from = "/*"
+to = "/server.js"
+status = 200
