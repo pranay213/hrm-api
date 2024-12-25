@@ -1,0 +1,68 @@
+{
+  "name": "hrm-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "npm run clean && npm run tscbuild && npm run esbuild",
+    "clean": "rm -rf dist build",
+    "copy-swagger": "cp swagger.yaml dist/",
+    "copy-env": "cp .env dist/",
+    "copy-package": "cp package.json build/",
+    "tscbuild": "tsc && npx tscpaths -p tsconfig.json -s ./src -o ./dist && npm run copy-env && npm run copy-swagger",
+    "esbuild": "rimraf build && esbuild src/server.ts --bundle --minify --platform=node --sourcemap --outfile=build/server.js --external:*.html",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/node": "^22.10.1",
+    "@types/swagger-ui-express": "^4.1.7",
+    "@types/yamljs": "^0.2.34",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "esbuild": "^0.24.2",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "aws-sdk": "^2.1692.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mock-aws-s3": "^4.0.2",
+    "mongoose": "^8.8.4",
+    "nock": "^13.5.6",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.17.0",
+    "winston-console-transport": "^1.1.9",
+    "yamljs": "^0.3.0"
+  }
+}
