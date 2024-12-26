@@ -1,13 +1,11 @@
 version: '3.8'
 
 services:
-  hrm-api:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  api:
+    build: .
     ports:
       - "8000:8000"
     environment:
-      NODE_ENV: production
-    volumes:
-      - .env:/app/.env
+      - PORT=8000
+      - MONGO_URI=${MONGO_URI}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
