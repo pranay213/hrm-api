@@ -25,7 +25,19 @@ app.use(cors());
 // Middleware to parse JSON bodies
 app.use(express.json());
 app.use((req, res, next) => {
-  logger.info(`${req.method} ${req.url} - ${JSON.stringify(req.body)}`);
+  const { method, url, headers, body } = req;
+  const startTime: any = new Date();
+
+  logger.info(
+    `Request: ${method} ${url} - Headers: ${headers.Authorization} -Body: ${JSON.stringify(body)}`,
+  );
+
+  // Capture response details
+  const originalSend = res.send;
+  res.send = function (body) {
+    return originalSend.call(this, body);
+  };
+
   next();
 });
 // Serve Swagger API documentation

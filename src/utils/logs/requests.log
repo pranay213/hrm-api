@@ -184,3 +184,675 @@
 2024-12-24T08:46:26.582Z [[32minfo[39m]: GET / - {}
 2024-12-24T08:46:27.067Z [[32minfo[39m]: GET /favicon.ico - {}
 2024-12-24T08:49:01.500Z [[32minfo[39m]: GET /api/role - {}
+2024-12-28T06:53:32.826Z [[32minfo[39m]: GET / - {}
+2024-12-28T06:53:33.284Z [[32minfo[39m]: GET /favicon.ico - {}
+2024-12-28T06:53:37.810Z [[32minfo[39m]: GET /api/role - {}
+2024-12-28T12:45:26.597Z [[32minfo[39m]: GET /api/modules - {}
+2024-12-28T12:45:26.605Z [[32minfo[39m]: GET /api/modules - {}
+2024-12-28T12:45:32.291Z [[32minfo[39m]: GET /api/modules - {}
+2024-12-28T12:45:32.297Z [[32minfo[39m]: GET /api/modules - {}
+2024-12-28T12:51:04.385Z [[32minfo[39m]: GET /api/modules - {}
+2024-12-28T12:51:04.392Z [[32minfo[39m]: GET /api/modules - {}
+2024-12-28T12:51:22.640Z [[32minfo[39m]: GET /api/modules - {}
+2024-12-28T12:51:22.647Z [[32minfo[39m]: GET /api/modules - {}
+2024-12-28T13:43:30.423Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:43:30.486Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:43:40.101Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:43:40.107Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:44:30.276Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:44:30.279Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:44:39.200Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:44:39.203Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:45:13.086Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:45:13.091Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:46:03.516Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:46:03.519Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:46:35.501Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:46:35.506Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:48:49.605Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:48:49.608Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:49:02.173Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:49:02.180Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:49:10.300Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:49:10.304Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:49:44.775Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:49:44.781Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:49:47.993Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:49:47.997Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:50:04.479Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:50:04.485Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:56:39.714Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T13:56:39.718Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:03:02.860Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:03:02.863Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:05:04.936Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:05:04.940Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:05:11.829Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:05:11.836Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:05:48.229Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:05:48.234Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:32:59.423Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:32:59.427Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:44:42.464Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:44:42.490Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:44:46.930Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:44:46.932Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:44:54.473Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:44:54.476Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:45:14.439Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:45:14.441Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:45:20.052Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:45:20.055Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:45:29.188Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:45:29.190Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:45:47.841Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:45:47.844Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:46:11.472Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:46:11.476Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:46:32.489Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:46:32.493Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:46:46.987Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T14:46:46.990Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T15:13:06.557Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T15:13:06.561Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T15:14:02.321Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T15:14:02.325Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T15:15:08.659Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T15:15:08.667Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T15:15:34.532Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T15:15:34.537Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T15:15:43.841Z [[32minfo[39m]: GET /api/module - {}
+2024-12-28T15:15:43.845Z [[32minfo[39m]: GET /api/module - {}
+2024-12-29T10:05:36.521Z [[32minfo[39m]: GET /api/module - {}
+2024-12-29T10:05:36.562Z [[32minfo[39m]: GET /api/module - {}
+2024-12-29T10:06:55.594Z [[32minfo[39m]: GET /api/module - {}
+2024-12-29T10:06:55.599Z [[32minfo[39m]: GET /api/module - {}
+2024-12-29T10:07:09.665Z [[32minfo[39m]: GET /api/module - {}
+2024-12-29T10:07:09.668Z [[32minfo[39m]: GET /api/module - {}
+2024-12-29T10:12:40.941Z [[32minfo[39m]: Request: GET /api/module - Headers: {"host":"localhost:8000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8,ar;q=0.7,fr;q=0.6"} -Body: {}
+2024-12-29T10:12:40.973Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 33ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:12:41.010Z [[32minfo[39m]: Request: GET /api/module - Headers: {"host":"localhost:8000","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8,ar;q=0.7,fr;q=0.6"} -Body: {}
+2024-12-29T10:12:41.016Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 7ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:13:13.997Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:13:14.005Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 10ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:13:14.054Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:13:14.056Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:13:32.486Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:13:32.492Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 8ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:13:32.525Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:13:32.527Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:14:18.295Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:14:18.301Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 7ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:14:18.314Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:14:18.316Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:14:38.021Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:14:38.024Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:14:38.028Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:14:38.030Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:14:44.316Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:14:44.317Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:14:44.324Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:14:44.327Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:18:25.442Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:18:25.445Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:18:25.450Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:18:25.452Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:18:49.963Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"test"}
+2024-12-29T10:18:50.383Z [[32minfo[39m]: Response: POST /api/login - Status: 401 - Response Time: 421ms - Body: {"success":false,"message":"Invalid Email or Password"}
+2024-12-29T10:18:51.260Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"t"}
+2024-12-29T10:18:51.620Z [[32minfo[39m]: Response: POST /api/login - Status: 401 - Response Time: 360ms - Body: {"success":false,"message":"Invalid Email or Password"}
+2024-12-29T10:18:55.604Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:18:55.944Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 340ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njc1MzUsImV4cCI6MTczNTQ3MTEzNX0.EkjJX4w7EvrCahvq7vTszSR_IpFqigJxsWceohroXOg"}}
+2024-12-29T10:19:00.301Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:19:00.303Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:19:00.311Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:19:00.314Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:19:26.405Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:19:26.744Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 340ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njc1NjYsImV4cCI6MTczNTQ3MTE2Nn0.ZYxFP63ZwlPUrP86MOWycxFJIUSVxCxQU8cDlUy_L1I"}}
+2024-12-29T10:19:30.314Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:19:30.315Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:19:30.323Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:19:30.326Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:20:39.417Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:20:39.710Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 292ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njc2MzksImV4cCI6MTczNTQ3MTIzOX0.6P21IgrfANpuQ3pZ2jR1MKuvzj32oF16ltaGMZPLtQg"}}
+2024-12-29T10:20:43.569Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:20:43.569Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:20:43.573Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:20:43.575Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:21:20.440Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:21:20.768Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 328ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njc2ODAsImV4cCI6MTczNTQ3MTI4MH0.1hE82Uv1xSMQGuSClhkvH7FP14LSRUUwYE3zH1E5A0g"}}
+2024-12-29T10:21:24.903Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:21:24.907Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 4ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:21:24.910Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:21:24.911Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:22:16.922Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:22:17.267Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 345ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njc3MzcsImV4cCI6MTczNTQ3MTMzN30.3AhW53JcWIwQzV6w1xsRiE-_dAPGrW6v_Noz7Y83RJM"}}
+2024-12-29T10:24:39.089Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:24:39.100Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 11ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:24:39.105Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:24:39.107Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:24:54.548Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@exmaple.com","password":"admin"}
+2024-12-29T10:24:55.995Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 1448ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T10:25:08.592Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:25:08.866Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 274ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njc5MDgsImV4cCI6MTczNTQ3MTUwOH0.0rwzR4q2y9D8wKQPm4DN5_4wOQ9r-KJReVGzuTtjgGA"}}
+2024-12-29T10:33:53.586Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:33:53.588Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:33:53.596Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:33:53.598Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:34:14.734Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:34:15.056Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 322ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njg0NTUsImV4cCI6MTczNTQ3MjA1NX0.6VyZVQFTGlw2rNUqS5WkTCl1y7agCkK9qyENaGHJqpA"}}
+2024-12-29T10:34:19.926Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:34:19.927Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:34:19.933Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:34:19.942Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 9ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:40:05.295Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:40:05.629Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 334ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njg4MDUsImV4cCI6MTczNTQ3MjQwNX0.9WGFOwJaZ1YGh3WaJCMCI3rkFoIDOYBkjUedIJb20Ng"}}
+2024-12-29T10:40:11.754Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:40:11.757Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:40:11.762Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:40:11.763Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:42:44.055Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:42:44.421Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 366ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njg5NjQsImV4cCI6MTczNTQ3MjU2NH0.JUjKm31xC9h5iiHWwuTG4T_rQQgE4xrqefHkk_6zp6M"}}
+2024-12-29T10:46:12.967Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:46:12.968Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:46:12.971Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:46:12.972Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:46:36.886Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:46:37.106Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 220ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NjkxOTcsImV4cCI6MTczNTQ3Mjc5N30.fWoIseseKfHeHWZmh6DNDD4WgXfsiKVhbLlczE0Y5yo"}}
+2024-12-29T10:47:33.944Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:47:33.945Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:47:33.948Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:47:33.949Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:47:45.284Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:47:45.524Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 240ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NjkyNjUsImV4cCI6MTczNTQ3Mjg2NX0.JxGIHq4vxo6NXDvz7mmDJaV845SJDwZFqk-sZT5t8Dw"}}
+2024-12-29T10:48:19.323Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:48:19.324Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:48:19.328Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:48:19.329Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 0ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:48:38.453Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:48:38.607Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 154ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NjkzMTgsImV4cCI6MTczNTQ3MjkxOH0.6c1GBw2PFYCKu5YXbUAcAIxi_1wNKFuynor0tYMIuNM"}}
+2024-12-29T10:49:24.433Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:49:24.435Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:49:24.438Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:49:24.439Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:49:36.588Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:49:36.776Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 188ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NjkzNzYsImV4cCI6MTczNTQ3Mjk3Nn0.3xrFAafPkwu3y9Mb5y1lpeJd7dUX4c1_Mx4cBiMa538"}}
+2024-12-29T10:49:51.673Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:49:51.673Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:49:51.679Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:49:51.684Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 5ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:50:57.766Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.coma","password":"admin"}
+2024-12-29T10:50:57.846Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 80ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T10:51:05.249Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:51:05.463Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 214ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njk0NjUsImV4cCI6MTczNTQ3MzA2NX0.SuppvpYRHbCRGFga1_0Y2z5nEalCVFPb0xZzjCQqV3g"}}
+2024-12-29T10:53:20.004Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:53:20.005Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:53:20.011Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:53:20.014Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:53:28.684Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T10:53:28.906Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 222ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0Njk2MDgsImV4cCI6MTczNTQ3MzIwOH0.bYSdrOD9xR96SONh6jMxqaFhDgV3eLHxvTWn92Ob05E"}}
+2024-12-29T10:53:38.809Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:53:38.811Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T10:53:38.815Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T10:53:38.820Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 5ms - Body: {"success":false,"message":"Access denied. Invalid token format."}
+2024-12-29T11:00:17.707Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T11:00:17.960Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 253ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NzAwMTcsImV4cCI6MTczNTQ3MzYxN30.hgM05IuJPmNZ899OmQgMHhTPMqnEI4LcdpdnmB9egcY"}}
+2024-12-29T11:05:37.905Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:05:37.931Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 26ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:05:37.934Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:05:37.936Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 2ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:06:08.233Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:06:08.236Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 3ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:06:08.239Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:06:08.241Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 2ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:06:39.367Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:06:39.371Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 4ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:06:39.375Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:06:39.377Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 2ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:14:07.184Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:14:07.223Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 40ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:14:07.233Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:14:07.237Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 4ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:15:09.554Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:15:09.573Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 21ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:15:09.598Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:15:09.603Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 5ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:16:31.185Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:16:31.189Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 4ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:16:31.197Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:16:31.200Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 3ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed"}
+2024-12-29T11:18:47.551Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:18:47.569Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 19ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed","sessionExpired":true}
+2024-12-29T11:18:47.577Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:18:47.580Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 3ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed","sessionExpired":true}
+2024-12-29T11:19:30.069Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:19:30.079Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 10ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed","sessionExpired":true}
+2024-12-29T11:19:30.085Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:19:30.093Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 8ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed","sessionExpired":true}
+2024-12-29T11:20:19.572Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:20:19.585Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 13ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed","sessionExpired":true}
+2024-12-29T11:20:19.598Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:20:19.608Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 10ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed","sessionExpired":true}
+2024-12-29T11:21:26.338Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:21:26.359Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 22ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed","sessionExpired":true}
+2024-12-29T11:21:26.378Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:21:26.380Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 2ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed","sessionExpired":true}
+2024-12-29T11:21:55.257Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:21:55.278Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 23ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed","sessionExpired":true}
+2024-12-29T11:21:55.293Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:21:55.299Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 6ms - Body: {"success":false,"message":"Invalid Token","error":"jwt malformed","sessionExpired":true}
+2024-12-29T11:23:13.474Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:23:13.476Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:23:13.481Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:23:13.483Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:29:37.683Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:29:37.692Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 11ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:29:37.709Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:29:37.713Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 4ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:30:15.638Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:30:15.642Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:30:15.649Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:30:15.655Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 5ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:32:29.646Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:32:29.648Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:32:29.654Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:32:29.657Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:33:02.642Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:33:02.643Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:33:02.649Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:33:02.653Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 4ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:33:23.797Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:33:23.798Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:33:23.821Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:33:23.824Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:33:35.276Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:33:35.277Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:33:35.293Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:33:35.294Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:34:19.701Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:34:19.703Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:34:19.719Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:34:19.720Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:34:32.989Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:34:32.991Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:34:32.997Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:34:32.998Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:34:45.151Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:34:45.154Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:34:45.163Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:34:45.164Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:34:56.088Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:34:56.089Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:34:56.096Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:34:56.097Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:35:15.493Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:35:15.496Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:35:15.518Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:35:15.520Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:36:01.123Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T11:36:01.697Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 574ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NzIxNjEsImV4cCI6MTczNTQ3NTc2MX0.mux0ElytiUwikBehTppf2d1tG3ouZLsOOu84zQuY3g4"}}
+2024-12-29T11:36:06.794Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:36:06.797Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:36:06.801Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:36:06.802Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:36:45.382Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"adin"}
+2024-12-29T11:36:45.760Z [[32minfo[39m]: Response: POST /api/login - Status: 401 - Response Time: 378ms - Body: {"success":false,"message":"Invalid Email or Password"}
+2024-12-29T11:36:46.582Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"adin"}
+2024-12-29T11:36:46.895Z [[32minfo[39m]: Response: POST /api/login - Status: 401 - Response Time: 313ms - Body: {"success":false,"message":"Invalid Email or Password"}
+2024-12-29T11:36:47.245Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"adin"}
+2024-12-29T11:36:47.576Z [[32minfo[39m]: Response: POST /api/login - Status: 401 - Response Time: 331ms - Body: {"success":false,"message":"Invalid Email or Password"}
+2024-12-29T11:36:52.398Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T11:36:52.726Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 328ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NzIyMTIsImV4cCI6MTczNTQ3NTgxMn0.jDA7dTzTCeufTnieeoB9lfTFdsyoi-S_8hY4Z8zHBQo"}}
+2024-12-29T11:36:56.157Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:36:56.158Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:36:56.163Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:36:56.164Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:47:05.429Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T11:47:05.811Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 382ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NzI4MjUsImV4cCI6MTczNTQ3NjQyNX0.wxzqOimpFerQjbmAlQ26QuNnsq9IlYJPHfzUmtATKVs"}}
+2024-12-29T11:47:08.683Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:47:08.684Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:47:08.691Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:47:08.692Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:49:47.629Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T11:49:48.147Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 518ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NzI5ODgsImV4cCI6MTczNTQ3NjU4OH0.oNmUljiaW50mpcYZOgn_kpwLS9wnxmcgQuJ3osPb-WI"}}
+2024-12-29T11:49:54.590Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:49:54.591Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:49:54.595Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:49:54.597Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T11:51:49.570Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T11:51:49.910Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 340ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NzMxMDksImV4cCI6MTczNTQ3NjcwOX0.QDoNfk0qadeWj5mKUHQmzQPkDXcrAiWf7RgxdxDpO5U"}}
+2024-12-29T11:52:39.272Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:52:39.370Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 98ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T11:52:39.375Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:52:39.445Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 69ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T11:52:47.649Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:52:47.792Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 143ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T11:52:47.796Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:52:47.872Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 76ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T11:53:02.954Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:53:03.146Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 193ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T11:53:03.151Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:53:03.245Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 94ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T11:56:38.891Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:56:39.008Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 117ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T11:56:39.013Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T11:56:39.081Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 68ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:07:17.705Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:07:17.835Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 148ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:07:17.850Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:07:17.911Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 60ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:08:49.425Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:08:49.505Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 80ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:08:49.513Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:08:49.617Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 104ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:09:22.812Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:09:22.902Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 90ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:11:49.149Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:11:49.301Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 157ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:13:40.164Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:13:40.295Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 131ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:14:31.983Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:14:32.117Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 135ms - Body: {"succees":true,"message":"feched modules successfully--","data":[]}
+2024-12-29T12:17:25.088Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:17:25.191Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 104ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:20:39.705Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:20:39.808Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 105ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:21:03.003Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:21:03.109Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 107ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:25:29.504Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:25:29.508Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 4ms - Body: {"success":false,"message":"Access denied. Invalid token format.","sessionExpired":true}
+2024-12-29T12:25:30.010Z [[32minfo[39m]: Request: GET /favicon.ico - Headers: undefined -Body: {}
+2024-12-29T12:29:13.577Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:29:13.658Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 81ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:29:37.948Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:29:37.959Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 11ms - Body: {"success":false,"message":"Invalid Token","error":"jwt expired","sessionExpired":true}
+2024-12-29T12:29:44.101Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T12:29:44.292Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 191ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"67694159237fd31f2cd1f98e","email":"admin@example.com","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Njk0MTU5MjM3ZmQzMWYyY2QxZjk4ZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3MzU0NzUzODQsImV4cCI6MTczNTQ3ODk4NH0.dNNUClIit8CtWnxr4XR1VlHxcbV5GMk0IE5QeeMM_JY"}}
+2024-12-29T12:29:55.151Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:29:55.217Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 66ms - Body: {"succees":true,"message":"feched modules successfully","data":[]}
+2024-12-29T12:30:44.237Z [[32minfo[39m]: Request: POST /api/module/add - Headers: undefined -Body: {"name":"Root Module","backendPath":"/api/root","frontEndPath":"root"}
+2024-12-29T12:30:44.242Z [[32minfo[39m]: Response: POST /api/module/add - Status: 400 - Response Time: 5ms - Body: {"success":false,"message":"Invalid Token","error":"jwt expired","sessionExpired":true}
+2024-12-29T12:31:04.106Z [[32minfo[39m]: Request: POST /api/module/add - Headers: undefined -Body: {"name":"Root Module","backendPath":"/api/root","frontEndPath":"root"}
+2024-12-29T12:31:04.203Z [[32minfo[39m]: Response: POST /api/module/add - Status: 201 - Response Time: 97ms - Body: {"success":true,"message":"Module created Successfully","data":{"name":"Root Module","backendPath":"/api/root","frontEndPath":"root","parent":null,"children":[],"status":true,"_id":"67714108dd8b76a6c306f098","createdAt":"2024-12-29T12:31:04.120Z","updatedAt":"2024-12-29T12:31:04.120Z","__v":0}}
+2024-12-29T12:31:16.366Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:31:16.427Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 61ms - Body: {"succees":true,"message":"feched modules successfully","data":[{"_id":"67714108dd8b76a6c306f098","name":"Root Module","backendPath":"/api/root","frontEndPath":"root","parent":null,"children":[],"status":true,"createdAt":"2024-12-29T12:31:04.120Z","updatedAt":"2024-12-29T12:31:04.120Z","__v":0}]}
+2024-12-29T12:45:51.213Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T12:45:51.329Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 118ms - Body: {"succees":true,"message":"feched modules successfully","data":[{"status":true,"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":["6767e3806f2c06c6fef5a4e9"],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0},{"status":true,"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":["6767e3ab6f2c06c6fef5a4ec"],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0},{"status":true,"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}]}
+2024-12-29T13:49:13.865Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T13:49:13.920Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 56ms - Body: {"success":false,"message":"Invalid Token","error":"jwt expired","sessionExpired":true}
+2024-12-29T13:49:25.527Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T13:49:25.545Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 18ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:49:27.049Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T13:49:27.054Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 5ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:49:38.324Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T13:49:38.330Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 7ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:49:57.189Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T13:49:57.194Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 4ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:49:58.264Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T13:49:58.271Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 7ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:49:58.869Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.com","password":"admin"}
+2024-12-29T13:49:58.874Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 5ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:50:13.008Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T13:50:13.205Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 197ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE1Mzk1NzEwMDk3ZTM4YWQ1OTczYiIsImlhdCI6MTczNTQ4MDIxMywiZXhwIjoxNzM1NDgzODEzfQ.EpTYseWztiD2_kwL3iVebCO-CLLNha886X5YF5WADe8"}}
+2024-12-29T13:50:24.577Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T13:50:24.579Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token.","sessionExpired":true}
+2024-12-29T13:51:54.808Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.com","password":"test"}
+2024-12-29T13:51:54.816Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 8ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:51:56.038Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.com","password":"test"}
+2024-12-29T13:51:56.047Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 9ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:52:01.163Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.com","password":"admin"}
+2024-12-29T13:52:01.171Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 8ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:52:01.928Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.com","password":"admin"}
+2024-12-29T13:52:01.937Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 8ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:52:27.291Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T13:52:27.533Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 242ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE1NDFiNzEwMDk3ZTM4YWQ1OTc0MiIsImlhdCI6MTczNTQ4MDM0NywiZXhwIjoxNzM1NDgzOTQ3fQ.pWRF_eYvWE4erDknXg3HkRKwCQs3eXvV84DNl0-jHmk"}}
+2024-12-29T13:52:34.497Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T13:52:34.499Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token.","sessionExpired":true}
+2024-12-29T13:55:20.326Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T13:55:20.631Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 305ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE1NGM4NzEwMDk3ZTM4YWQ1OTc0NSIsImlhdCI6MTczNTQ4MDUyMCwiZXhwIjoxNzM1NDg0MTIwfQ.HsatmvZrKQs5Z3BQZLBCElSYHAGb_ejw8mcBlcH1e_o"}}
+2024-12-29T13:55:36.257Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T13:55:36.258Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 1ms - Body: {"success":false,"message":"Access denied. Invalid token.","sessionExpired":true}
+2024-12-29T13:57:32.608Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@example.in","password":"admin"}
+2024-12-29T13:57:32.656Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 52ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T13:57:43.555Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T13:57:43.908Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 353ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE1NTU3OGNjNTUyMWI2YmYwMmY1YiIsImlhdCI6MTczNTQ4MDY2MywiZXhwIjoxNzM1NDg0MjYzfQ.5JI9-6u5xxWBGaLgjd79YktBPKYtcumM7ulUlL6uCMw"}}
+2024-12-29T13:58:10.641Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T13:58:10.647Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 6ms - Body: {"success":false,"message":"Access denied. Invalid token.","sessionExpired":true}
+2024-12-29T13:59:56.118Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T13:59:56.415Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 297ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE1NWRjOGNjNTUyMWI2YmYwMmY1ZSIsImlhdCI6MTczNTQ4MDc5NiwiZXhwIjoxNzM1NDg0Mzk2fQ.WesJKxV44KITV3XB-i0rKBdWccRUxrUGMQnQZLGt2s4"}}
+2024-12-29T14:00:00.259Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:00:00.262Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token.","sessionExpired":true}
+2024-12-29T14:09:26.238Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T14:09:26.535Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 296ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE1ODE2OGNjNTUyMWI2YmYwMmY2MSIsImlhdCI6MTczNTQ4MTM2NiwiZXhwIjoxNzM1NDg0OTY2fQ.TWdeL_jeiRSZUTRD-hO8W2AtS_0N1krGypqDCEGvonw"}}
+2024-12-29T14:31:23.870Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:31:24.024Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 154ms - Body: {"succees":true,"message":"feched modules successfully","data":[{"status":true,"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":["6767e3806f2c06c6fef5a4e9"],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0},{"status":true,"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":["6767e3ab6f2c06c6fef5a4ec"],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0},{"status":true,"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}]}
+2024-12-29T14:31:29.891Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:31:29.916Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 25ms - Body: {"succees":true,"message":"feched modules successfully","data":[{"status":true,"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":["6767e3806f2c06c6fef5a4e9"],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0},{"status":true,"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":["6767e3ab6f2c06c6fef5a4ec"],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0},{"status":true,"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}]}
+2024-12-29T14:31:44.932Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:31:44.946Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 13ms - Body: {"succees":true,"message":"feched modules successfully","data":[{"status":true,"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":["6767e3806f2c06c6fef5a4e9"],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0},{"status":true,"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":["6767e3ab6f2c06c6fef5a4ec"],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0},{"status":true,"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}]}
+2024-12-29T14:39:30.117Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:39:30.177Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 84ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T14:39:41.694Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:39:41.713Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 20ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T14:43:49.823Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:43:49.844Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 21ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T14:48:32.944Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:48:32.961Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 17ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T14:49:15.232Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:49:15.248Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 16ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T14:54:18.677Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:54:18.693Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 16ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T14:54:32.757Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:54:32.768Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 11ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T14:55:05.893Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:55:05.925Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 32ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T14:57:24.310Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:57:24.350Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 41ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T14:58:47.576Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:58:47.592Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 16ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T14:59:10.200Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T14:59:10.213Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 13ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T15:01:47.414Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:01:47.429Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 15ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T15:03:36.705Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:03:36.732Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 28ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T15:08:10.785Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:08:10.799Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 14ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T15:10:58.068Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:10:58.081Z [[32minfo[39m]: Response: GET /api/module - Status: 400 - Response Time: 13ms - Body: {"success":false,"message":"Invalid Token","error":"jwt expired","sessionExpired":true}
+2024-12-29T15:11:19.357Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T15:11:19.454Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 97ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE2Njk3OGFiZWU3ZGI2OTk3ZjQyMiIsImlhdCI6MTczNTQ4NTA3OSwiZXhwIjoxNzM1NDg4Njc5fQ.6dxd7BB7UAKocBHyyDNpuXGr-ByFyOyajSwPbdkpHIs"}}
+2024-12-29T15:11:22.911Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:11:22.913Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token.","sessionExpired":true}
+2024-12-29T15:11:41.673Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T15:11:41.759Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 86ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE2NmFkOGFiZWU3ZGI2OTk3ZjQyNSIsImlhdCI6MTczNTQ4NTEwMSwiZXhwIjoxNzM1NDg4NzAxfQ.wAmnK5stCfWNUpveQR3Use8MB7DPWCFAtTjAoM1DDC0"}}
+2024-12-29T15:11:44.945Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:11:44.947Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 2ms - Body: {"success":false,"message":"Access denied. Invalid token.","sessionExpired":true}
+2024-12-29T15:13:00.523Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T15:13:00.608Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 85ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE2NmZjOGFiZWU3ZGI2OTk3ZjQyOCIsImlhdCI6MTczNTQ4NTE4MCwiZXhwIjoxNzM1NDg4NzgwfQ.-75VFWIFv2s1NNSzcHg2_AazNi0I-33UBQXryURJI_8"}}
+2024-12-29T15:13:32.634Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:13:32.637Z [[32minfo[39m]: Response: GET /api/module - Status: 401 - Response Time: 3ms - Body: {"success":false,"message":"Access denied. Invalid token.","sessionExpired":true}
+2024-12-29T15:18:01.307Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admn@test.in","password":"admin"}
+2024-12-29T15:18:01.311Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 4ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T15:18:13.297Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T15:18:13.486Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 189ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE2ODM1OGFiZWU3ZGI2OTk3ZjQyYyIsImlhdCI6MTczNTQ4NTQ5MywiZXhwIjoxNzM1NDg5MDkzfQ.TAYQIPHAaFg-NaqDlMHkO2BPpJ2SgIxH5Jqn3cNvJeE"}}
+2024-12-29T15:18:18.100Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:18:18.116Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 16ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T15:18:37.916Z [[32minfo[39m]: Request: GET /api/logout - Headers: undefined -Body: {}
+2024-12-29T15:18:37.922Z [[32minfo[39m]: Response: GET /api/logout - Status: 400 - Response Time: 6ms - Body: {"success":false,"message":"Token is required"}
+2024-12-29T15:25:48.791Z [[32minfo[39m]: Request: GET /api/logout - Headers: undefined -Body: {}
+2024-12-29T15:26:03.111Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:26:21.451Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:26:28.570Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:26:47.175Z [[32minfo[39m]: Request: GET / - Headers: undefined -Body: {}
+2024-12-29T15:26:47.176Z [[32minfo[39m]: Response: GET / - Status: 200 - Response Time: 1ms - Body: [object Object]
+2024-12-29T15:26:47.177Z [[32minfo[39m]: Response: GET / - Status: 200 - Response Time: 1ms - Body: {"message":"Server is running"}
+2024-12-29T15:27:15.101Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:27:49.160Z [[32minfo[39m]: Request: GET /api/logout - Headers: undefined -Body: {}
+2024-12-29T15:49:15.679Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:49:15.718Z [[32minfo[39m]: Response: GET /api/module - Status: 403 - Response Time: 41ms - Body: {"success":false,"message":"Access denied. No token provided.","sessionExpired":true}
+2024-12-29T15:49:31.460Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T15:49:31.818Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 358ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE2ZjhiMDVhYjY0MjAxMTg0NDNiNyIsImlhdCI6MTczNTQ4NzM3MSwiZXhwIjoxNzM1NDkwOTcxfQ.EbkSbtU1Lh505D5DrChwPg6CLpA5VTCNhkvmdI67RIg"}}
+2024-12-29T15:49:35.830Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:49:35.841Z [[32minfo[39m]: Response: GET /api/module - Status: 403 - Response Time: 10ms - Body: {"success":false,"message":"Access denied. No token provided.","sessionExpired":true}
+2024-12-29T15:51:34.251Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T15:51:34.629Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 381ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE3MDA2Yzc2ZDUzZmM1ZmUzMTFmNyIsImlhdCI6MTczNTQ4NzQ5NCwiZXhwIjoxNzM1NDkxMDk0fQ.VOlDc6HmiOtokM9GKNkzkQMEJklIUsbPDVwKdnd6RN0"}}
+2024-12-29T15:51:39.111Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T15:51:39.179Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 67ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T15:51:52.459Z [[32minfo[39m]: Request: GET /api/logout - Headers: undefined -Body: {}
+2024-12-29T15:51:52.499Z [[32minfo[39m]: Response: GET /api/logout - Status: 400 - Response Time: 39ms - Body: {"success":false,"message":"Token is required"}
+2024-12-29T15:52:22.043Z [[32minfo[39m]: Request: GET /api/logout - Headers: undefined -Body: {}
+2024-12-29T15:52:22.061Z [[32minfo[39m]: Response: GET /api/logout - Status: 400 - Response Time: 19ms - Body: {"success":false,"message":"Token is required"}
+2024-12-29T15:54:42.207Z [[32minfo[39m]: Request: GET /api/logout - Headers: undefined -Body: {}
+2024-12-29T15:54:42.245Z [[32minfo[39m]: Response: GET /api/logout - Status: 200 - Response Time: 41ms - Body: {"success":true,"message":"Successfully logged out from this device"}
+2024-12-29T16:28:32.480Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.com","password":"test"}
+2024-12-29T16:28:32.532Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 55ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T16:28:42.167Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.com","password":"admin"}
+2024-12-29T16:28:42.178Z [[32minfo[39m]: Response: POST /api/login - Status: 404 - Response Time: 11ms - Body: {"success":false,"message":"Account not found"}
+2024-12-29T16:28:56.473Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"dad"}
+2024-12-29T16:28:56.766Z [[32minfo[39m]: Response: POST /api/login - Status: 401 - Response Time: 293ms - Body: {"success":false,"message":"Invalid Email or Password"}
+2024-12-29T16:29:01.432Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T16:29:01.767Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 334ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE3OGNkYTdhMmU5NjMzN2E2NmViYyIsImlhdCI6MTczNTQ4OTc0MSwiZXhwIjoxNzM1NDkzMzQxfQ.IN3-URvyA5jBAqzuekz-PYHJV21LgamzDav2KxfKf5w"}}
+2024-12-29T16:29:06.250Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:29:06.321Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 70ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T16:31:25.775Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:31:25.847Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 71ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T16:32:03.163Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:32:03.187Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 24ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T16:36:29.985Z [[32minfo[39m]: Request: GET /api/logout - Headers: undefined -Body: {}
+2024-12-29T16:36:30.000Z [[32minfo[39m]: Response: GET /api/logout - Status: 200 - Response Time: 15ms - Body: {"success":true,"message":"Successfully logged out from this device"}
+2024-12-29T16:37:46.633Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T16:37:46.909Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 276ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE3YWRhYTdhMmU5NjMzN2E2NmVjYyIsImlhdCI6MTczNTQ5MDI2NiwiZXhwIjoxNzM1NDkzODY2fQ.7mjCBVPGc6KeWFwfUkPZTvx-aX_CzM0t2kiFgFegtU8"}}
+2024-12-29T16:37:50.072Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:37:50.108Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 35ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T16:38:00.318Z [[32minfo[39m]: Request: GET /api/logout - Headers: undefined -Body: {}
+2024-12-29T16:38:00.339Z [[32minfo[39m]: Response: GET /api/logout - Status: 200 - Response Time: 20ms - Body: {"success":true,"message":"Successfully logged out from this device"}
+2024-12-29T16:39:15.219Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T16:39:15.386Z [[32minfo[39m]: Response: POST /api/login - Status: 200 - Response Time: 167ms - Body: {"success":true,"message":"Login successful","data":{"account":{"id":"675fe13e1decff9700e10575","email":"admin@test.in","firstName":"Super","lastName":"Admin","roleType":"SUPER_ADMIN"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWZlMTNlMWRlY2ZmOTcwMGUxMDU3NSIsImVtYWlsIjoiYWRtaW5AdGVzdC5pbiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsInNlc3Npb25JZCI6IjY3NzE3YjMzYTdhMmU5NjMzN2E2NmVkNCIsImlhdCI6MTczNTQ5MDM1NSwiZXhwIjoxNzM1NDkzOTU1fQ.sHGtNDG7Cp82YznFFmeMuz478Pzau9yp6g91GnVyA8g"}}
+2024-12-29T16:41:20.530Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:41:20.562Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 32ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T16:41:28.052Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:41:28.073Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 21ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T16:42:07.732Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:42:07.784Z [[32minfo[39m]: Response: GET /api/module - Status: 200 - Response Time: 52ms - Body: {"success":true,"message":"Fetched modules successfully","data":[{"_id":"6767e36a6f2c06c6fef5a4e7","name":"Root Module 1","backendPath":"/api/root1","frontEndPath":"/root1","parent":null,"children":[{"_id":"6767e3806f2c06c6fef5a4e9","name":"Submodule 1.1","backendPath":"/api/root1/sub1","frontEndPath":"/root1/sub1","parent":"6767e36a6f2c06c6fef5a4e7","children":[{"_id":"6767e3ab6f2c06c6fef5a4ec","name":"Submodule 1.1.1","backendPath":"/api/root1/sub1/nested1","frontEndPath":"/root1/sub1/nested1","parent":"6767e3806f2c06c6fef5a4e9","children":[],"createdAt":"2024-12-22T10:02:19.776Z","updatedAt":"2024-12-22T10:02:19.776Z","__v":0}],"createdAt":"2024-12-22T10:01:36.308Z","updatedAt":"2024-12-22T10:02:19.781Z","__v":0}],"createdAt":"2024-12-22T10:01:14.220Z","updatedAt":"2024-12-22T10:01:36.312Z","__v":0}]}
+2024-12-29T16:43:28.590Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:44:49.636Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:45:04.294Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T16:45:12.554Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:47:09.574Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:51:57.647Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:57:10.648Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:58:41.143Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T16:58:48.730Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T16:59:05.478Z [[32minfo[39m]: Request: GET /api/logout - Headers: undefined -Body: {}
+2024-12-29T17:01:00.145Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T17:01:04.890Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T17:04:27.433Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T17:04:57.412Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T17:05:19.422Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T17:06:33.799Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T17:06:44.114Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T17:06:58.481Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T17:07:03.051Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:01:08.318Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:01:24.097Z [[32minfo[39m]: Request: POST /api/login - Headers: undefined -Body: {"email":"admin@test.in","password":"admin"}
+2024-12-29T18:01:31.321Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:20:59.004Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:21:26.576Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:21:32.889Z [[32minfo[39m]: Request: POST /api/module/add - Headers: undefined -Body: {"parentId":null}
+2024-12-29T18:21:39.568Z [[32minfo[39m]: Request: POST /api/module/add - Headers: undefined -Body: {"parentId":null}
+2024-12-29T18:22:55.203Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:23:17.063Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:24:13.273Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:24:18.670Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:24:33.249Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:24:50.335Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:25:03.020Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:25:16.538Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:25:32.450Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:25:46.069Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:25:50.934Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:26:03.378Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:26:13.521Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:26:27.866Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:29:07.464Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:29:12.809Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:29:40.014Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:29:46.809Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:29:51.630Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:29:55.314Z [[32minfo[39m]: Request: POST /api/module/add - Headers: undefined -Body: {"parentId":null}
+2024-12-29T18:30:07.293Z [[32minfo[39m]: Request: POST /api/module/add - Headers: undefined -Body: {"parentId":null,"name":"test","frontendPath":"test","backendPath":"test"}
+2024-12-29T18:30:32.481Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:30:38.764Z [[32minfo[39m]: Request: POST /api/module/add - Headers: undefined -Body: {"parentId":null,"name":"test","frontendPath":"test","backendPath":"test"}
+2024-12-29T18:31:28.767Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:31:35.977Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:31:42.268Z [[32minfo[39m]: Request: POST /api/module/add - Headers: undefined -Body: {"parentId":null,"name":"test","frontEndPath":"test","backendPath":"test"}
+2024-12-29T18:31:52.133Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:33:21.756Z [[32minfo[39m]: Request: POST /api/module/add - Headers: undefined -Body: {"parentId":"6771958e83acd6d7e4074d89","name":"test","frontEndPath":"test","backendPath":"test"}
+2024-12-29T18:35:33.846Z [[32minfo[39m]: Request: POST /api/module/add - Headers: undefined -Body: {"parentId":"6771958e83acd6d7e4074d89","name":"tester","frontEndPath":"tester","backendPath":"tester"}
+2024-12-29T18:35:42.274Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:36:22.929Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:37:03.290Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:37:12.668Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:39:40.848Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:40:00.978Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:40:04.787Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:40:10.848Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:40:40.053Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:41:02.652Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:41:17.458Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:41:19.689Z [[32minfo[39m]: Request: GET /api/module/6767e3806f2c06c6fef5a4e9 - Headers: undefined -Body: {}
+2024-12-29T18:41:37.974Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:41:40.003Z [[32minfo[39m]: Request: GET /api/module/6767e3806f2c06c6fef5a4e9 - Headers: undefined -Body: {}
+2024-12-29T18:42:52.099Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:42:54.294Z [[32minfo[39m]: Request: GET /api/module/6767e3806f2c06c6fef5a4e9 - Headers: undefined -Body: {}
+2024-12-29T18:43:34.982Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:43:37.106Z [[32minfo[39m]: Request: GET /api/module/6767e3806f2c06c6fef5a4e9 - Headers: undefined -Body: {}
+2024-12-29T18:43:40.144Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:43:41.511Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:43:42.142Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:43:42.315Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:43:42.492Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:43:42.643Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:43:42.817Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:43:42.984Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:43:43.141Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:43:43.360Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:43:51.245Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:43:55.063Z [[32minfo[39m]: Request: GET /api/module/6767e36a6f2c06c6fef5a4e7 - Headers: undefined -Body: {}
+2024-12-29T18:44:04.794Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:44:08.756Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:44:10.805Z [[32minfo[39m]: Request: GET /api/module/6767e36a6f2c06c6fef5a4e7 - Headers: undefined -Body: {}
+2024-12-29T18:44:19.807Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:44:26.635Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:44:28.851Z [[32minfo[39m]: Request: GET /api/module/6767e36a6f2c06c6fef5a4e7 - Headers: undefined -Body: {}
+2024-12-29T18:44:37.478Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:44:41.041Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:44:44.204Z [[32minfo[39m]: Request: GET /api/module/6767e36a6f2c06c6fef5a4e7 - Headers: undefined -Body: {}
+2024-12-29T18:45:20.197Z [[32minfo[39m]: Request: GET /api/module/6767e36a6f2c06c6fef5a4e7 - Headers: undefined -Body: {}
+2024-12-29T18:46:03.054Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:46:08.421Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:46:11.061Z [[32minfo[39m]: Request: GET /api/module/6767e36a6f2c06c6fef5a4e7 - Headers: undefined -Body: {}
+2024-12-29T18:46:31.865Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:46:54.458Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:46:57.000Z [[32minfo[39m]: Request: GET /api/module/6767e3806f2c06c6fef5a4e9 - Headers: undefined -Body: {}
+2024-12-29T18:47:00.639Z [[32minfo[39m]: Request: GET /api/module/6767e3ab6f2c06c6fef5a4ec - Headers: undefined -Body: {}
+2024-12-29T18:47:03.284Z [[32minfo[39m]: Request: GET /api/module/6771967583acd6d7e4074d95 - Headers: undefined -Body: {}
+2024-12-29T18:47:10.849Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:47:22.783Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:49:22.792Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:49:50.170Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:49:57.603Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:50:09.307Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:51:25.170Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:51:49.567Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:52:21.405Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:52:29.751Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:52:38.279Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:53:06.386Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:53:10.732Z [[32minfo[39m]: Request: PATCH /api/module/6767e36a6f2c06c6fef5a4e7 - Headers: undefined -Body: {"status":false}
+2024-12-29T18:53:27.302Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:55:05.617Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:55:34.441Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}
+2024-12-29T18:55:36.819Z [[32minfo[39m]: Request: PATCH /api/module/6771958e83acd6d7e4074d89 - Headers: undefined -Body: {"status":false}
+2024-12-29T18:55:49.410Z [[32minfo[39m]: Request: GET /api/module - Headers: undefined -Body: {}

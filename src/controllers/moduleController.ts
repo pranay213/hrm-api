@@ -10,6 +10,12 @@ export const createModule = async (
 ): Promise<void> => {
   try {
     const { name, backendPath, frontEndPath, parentId, metadata } = req.body;
+    if (!name || !backendPath || !frontEndPath) {
+      res
+        .status(400)
+        .json({ success: false, message: 'All fields are required' });
+      return;
+    }
     const newModule = new Module({
       name,
       backendPath,
@@ -41,10 +47,56 @@ export const createModule = async (
   }
 };
 
+export const updateModule = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  try {
+    const id = req.params.id;
+    const { name, backendPath, frontEndPath, parentId, metadata, status } =
+      req.body;
+    if (!id) {
+      res.status(400).json({
+        success: false,
+        message: 'Module Id Not Found',
+      });
+      return;
+    }
+
+    const findModule = await Module.findById(id);
+    if (!findModule) {
+      res.status(404).json({
+        success: false,
+        message: 'Module Not Found',
+      });
+    }
+
+    await Module.findByIdAndUpdate(
+      id,
+      { name, frontEndPath, backendPath, parent: parentId, metadata, status },
+      {
+        new: true,
+      },
+    );
+    res.status(200).json({
+      success: true,
+      message: 'Module updated Successfully',
+    });
+  } catch (error: any) {
+    res.status(500).json({
+      success: false,
+      message: 'Module creation failed',
+      error: error.message,
+    });
+  }
+};
+
 // Get all modules
 // Helper function to recursively build the module hierarchy
 const buildHierarchy = async (parentId: string | null = null): Promise<any> => {
-  const modules = await Module.find({ parent: parentId }).lean();
+  let mongoQuery: any;
+  if (parentId) mongoQuery.parent = parentId;
+  const modules = await Module.find(mongoQuery).lean();
 
   return Promise.all(
     modules.map(async (module: any) => ({
@@ -60,32 +112,49 @@ export const getAllModules = async (
   res: Response,
 ): Promise<void> => {
   try {
-    const hierarchy = await buildHierarchy();
+    // Helper function to recursively build the module hierarchy
+    const buildHierarchy = async (
+      parentId: string | null = null,
+    ): Promise<any> => {
+      const modules = await Module.find({ parent: parentId }).lean(); // Fetch modules with the specified parent
+      return Promise.all(
+        modules.map(async (module: any) => ({
+          ...module,
+          children: await buildHierarchy(module._id), // Recursively fetch children
+        })),
+      );
+    };
+
+    // Build the hierarchy starting from the root modules (parent = null)
+    const hierarchy = await buildHierarchy(null);
+
     res.status(200).json({
-      succees: true,
-      message: 'feched modules successfully',
+      success: true,
+      message: 'Fetched modules successfully',
       data: hierarchy,
     });
   } catch (error: any) {
     res.status(500).json({
       success: false,
-      message: 'fetching modules Failed',
+      message: 'Fetching modules failed',
       error: error.message,
     });
   }
 };
 
 // Get a specific module by name
-export const getModuleByName = async (req: Request, res: Response) => {
+export const getModuleById = async (req: Request, res: Response) => {
   try {
-    const { name } = req.params;
-    const module = await Module.findOne({ name });
+    const { id } = req.params;
+    const module = await Module.findById(id);
     if (!module) {
       return res
         .status(404)
         .json({ success: false, message: 'Module not found' });
     }
-    res.status(200).json({ module });
+    res
+      .status(200)
+      .json({ success: true, message: 'Module Retrieved', data: module });
   } catch (error: any) {
     res.status(500).json({
       success: false,

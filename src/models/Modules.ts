@@ -14,9 +14,11 @@ const ModuleSchema: Schema = new Schema(
     name: { type: String, required: true, unique: true },
     backendPath: { type: String, required: true, unique: true },
     frontEndPath: { type: String, required: true, unique: true },
+    icon: { type: String, required: false },
     parent: { type: Schema.Types.ObjectId, ref: 'Module', default: null }, // Reference to the parent module
     children: [{ type: Schema.Types.ObjectId, ref: 'Module' }], // References to child modules
     metadata: { type: Schema.Types.Mixed, default: {} }, // Additional metadata (dynamic fields)
+    status: { type: Boolean, default: true },
   },
   { timestamps: true }, // Automatically include createdAt and updatedAt fields
 );

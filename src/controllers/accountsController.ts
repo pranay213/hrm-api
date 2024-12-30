@@ -3,6 +3,7 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import Account from '../models/Accounts';
 import dotenv from 'dotenv';
+import SessionsModel from '../models/Sessions';
 
 dotenv.config();
 const JWT_SECRET_KEY: any = process.env.JWT_SECRET_KEY;
@@ -107,15 +108,32 @@ export const login = async (req: Request, res: Response): Promise<Response> => {
         .status(401)
         .json({ success: false, message: 'Invalid Email or Password' });
     }
+
+    // Create session record
+    const session = new SessionsModel({
+      admin_id: account._id,
+      user_id: account._id,
+      ip_address: req.ip, // Record the IP address
+      user_agent: req.headers['user-agent'] || 'unknown', // Record the User-Agent
+      device: req.headers['user-agent'] || 'unknown', // Record the device (can be updated based on requirement)
+      login_timestamp: new Date(),
+      last_active_timestamp: new Date(),
+      status: 'active', // Set status to active
+    });
+
+    await session.save(); // Save the session to the database
+
     const token = jwt.sign(
       {
         id: account._id,
         email: account.email,
         role: account.roleType,
+        sessionId: session._id, // Store session ID in the token
       },
       JWT_SECRET_KEY,
       { expiresIn: '1h' },
     );
+
     return res.status(200).json({
       success: true,
       message: 'Login successful',
@@ -138,6 +156,96 @@ export const login = async (req: Request, res: Response): Promise<Response> => {
     });
   }
 };
+
+export const logoutSingleDevice = async (
+  req: Request,
+  res: Response,
+): Promise<Response> => {
+  try {
+    const token = req.headers.authorization?.trim();
+    if (!token) {
+      return res.status(400).json({
+        success: false,
+        message: 'Token is required',
+      });
+    }
+
+    // Verify and decode the token
+    let decodedToken: any;
+    try {
+      decodedToken = jwt.verify(token, JWT_SECRET_KEY);
+    } catch (err) {
+      return res.status(401).json({
+        success: false,
+        message: 'Invalid or expired token',
+      });
+    }
+
+    const { sessionId } = decodedToken; // Extract sessionId from decoded token
+
+    if (!sessionId) {
+      return res.status(400).json({
+        success: false,
+        message: 'Session ID not found in token',
+      });
+    }
+
+    // Find and delete the session associated with the session ID
+    const session = await SessionsModel.findOneAndDelete({ _id: sessionId });
+
+    if (!session) {
+      return res.status(404).json({
+        success: false,
+        message: 'No session found for the given session ID',
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      message: 'Successfully logged out from this device',
+    });
+  } catch (error: any) {
+    return res.status(500).json({
+      success: false,
+      message: 'An error occurred during logout',
+      error: error.message,
+    });
+  }
+};
+
+export const logoutAllDevices = async (
+  req: Request,
+  res: Response,
+): Promise<Response> => {
+  try {
+    const { token } = req.body; // Token is needed to verify the user
+    if (!token) {
+      return res.status(400).json({
+        success: false,
+        message: 'Token is required',
+      });
+    }
+
+    // Verify the token
+    const decodedToken = jwt.verify(token, JWT_SECRET_KEY);
+    const userId = (decodedToken as any).id; // Extract user ID from the decoded token
+
+    // Find and delete all sessions for this user
+    await SessionsModel.deleteMany({ user_id: userId });
+
+    return res.status(200).json({
+      success: true,
+      message: 'Successfully logged out from all devices',
+    });
+  } catch (error: any) {
+    return res.status(500).json({
+      success: false,
+      message: 'An error occurred during logout',
+      error: error.message,
+    });
+  }
+};
+
 // Controller to update an account
 export const updateAccount = async (req: Request, res: Response) => {
   try {
