@@ -29,7 +29,7 @@ app.use((req, res, next) => {
   const startTime: any = new Date();
 
   logger.info(
-    `Request: ${method} ${url} - Headers: ${headers.Authorization} -Body: ${JSON.stringify(body)}`,
+    `Request: ${method} ${url} - Headers: ${headers.authorization} -Body: ${JSON.stringify(body)}`,
   );
 
   // Capture response details
@@ -58,10 +58,10 @@ app.get('/api/initialize', async (req, res) => {
   try {
     // Provide default super admin data
     req.body = {
-      firstName: 'Super',
-      lastName: 'Admin',
-      email: 'admin@example.com',
-      password: 'admin',
+      firstName: 'Pranay',
+      lastName: 'Kodam',
+      email: 'pranay@kodam.in',
+      password: 'test',
     };
     // Call the createSuperAdmin controller
     await createSuperAdmin(req, res);
@@ -79,7 +79,7 @@ app.use('/api/module', authenticate, moduleRoutes); // Uncomment and add roleRou
 
 app.use('/api/role', authenticate, roleRoutes); // Uncomment and add roleRoutes for role management
 // Secured Routes
-// app.use('/api/companies', authenticate, companyRoutes); // Routes for companies
+app.use('/api/company', authenticate, companyRoutes); // Routes for companies
 // app.use('/api/branches', authenticate, branchRoutes); // Routes for branches
 // app.use('/api/employees', authenticate, employeeRoutes); // Routes for employees
 

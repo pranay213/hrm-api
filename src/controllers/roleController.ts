@@ -1,64 +1,183 @@
 import { Request, Response } from 'express';
-import Role from '../models/Role'; // Assuming the Role model is in models/Role
-import Module from '../models/Modules';
+import Role from '../models/Role';
 
-export const createRole = async (req: Request, res: Response) => {
+// Error Type
+interface CustomError extends Error {
+  message: string;
+}
+
+// Create a new role
+export const createRole = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
   try {
-    const { name, checkedModules } = req.body;
+    const { name, description, isActive } = req.body;
 
-    // Validate input
-    if (!name || !Array.isArray(checkedModules)) {
-      return res.status(400).json({
-        error: 'Invalid input data. Name and checkedModules are required.',
-      });
-    }
-
-    // Check if role with the same name already exists
     const existingRole = await Role.findOne({ name });
     if (existingRole) {
-      return res
-        .status(409)
-        .json({ error: 'Role with the same name already exists' });
+      res.status(400).json({
+        success: false,
+        message: 'Role with this name already exists',
+      });
+      return;
     }
 
-    // Get all modules
-    const allModules = await Module.find();
+    const role = new Role({
+      name,
+      description,
+      isActive: isActive !== undefined ? isActive : true,
+    });
 
-    // Create permissions object: true for checkedModules, false for others
-    const permissions = allModules.map((module: any) => ({
-      module: module._id,
-      permission: checkedModules.includes(module._id.toString()),
-    }));
-
-    // Create and save the role
-    const newRole = await Role.create({ name, permissions });
-
+    await role.save();
     res.status(201).json({
       success: true,
       message: 'Role created successfully',
-      data: newRole,
+      data: role,
     });
-  } catch (error: any) {
+    return;
+  } catch (error) {
+    const typedError = error as CustomError;
     res.status(500).json({
       success: false,
-      message: 'Failed to create role',
-      error: error.message,
+      message: 'Error creating role',
+      error: typedError.message,
     });
+    return;
   }
 };
 
-export const getRoles = async (req: Request, res: Response) => {
+// Get all roles
+export const getAllRoles = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
   try {
-    const findRoles = await Role.find();
-    res.status(200).send({
+    const roles = await Role.find();
+    res.status(200).json({
       success: true,
-      message: 'roles fetched',
-      data: findRoles,
+      message: 'Roles fetched successfully',
+      data: roles,
     });
-  } catch (error: any) {
+    return;
+  } catch (error) {
+    const typedError = error as CustomError;
     res.status(500).json({
       success: false,
-      error: error.message,
+      message: 'Error fetching roles',
+      error: typedError.message,
     });
+    return;
+  }
+};
+
+// Get a single role by ID
+export const getRoleById = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  try {
+    const { id } = req.params;
+    const role = await Role.findById(id);
+
+    if (!role) {
+      res.status(404).json({
+        success: false,
+        message: 'Role not found',
+      });
+      return;
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Role fetched successfully',
+      data: role,
+    });
+    return;
+  } catch (error) {
+    const typedError = error as CustomError;
+    res.status(500).json({
+      success: false,
+      message: 'Error fetching role',
+      error: typedError.message,
+    });
+    return;
+  }
+};
+
+// Update a role by ID
+export const updateRole = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  try {
+    const { id } = req.params;
+    const updates = req.body;
+
+    const updatedRole = await Role.findByIdAndUpdate(id, updates, {
+      new: true,
+    });
+
+    if (!updatedRole) {
+      res.status(404).json({
+        success: false,
+        message: 'Role not found',
+      });
+      return;
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Role updated successfully',
+      data: updatedRole,
+    });
+    return;
+  } catch (error) {
+    const typedError = error as CustomError;
+    res.status(500).json({
+      success: false,
+      message: 'Error updating role',
+      error: typedError.message,
+    });
+    return;
+  }
+};
+
+// Delete (deactivate) a role by ID
+export const deactivateRole = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  try {
+    const { id } = req.params;
+
+    const deactivatedRole = await Role.findByIdAndUpdate(
+      id,
+      { isActive: false },
+      { new: true },
+    );
+
+    if (!deactivatedRole) {
+      res.status(404).json({
+        success: false,
+        message: 'Role not found',
+      });
+      return;
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Role deactivated successfully',
+      data: deactivatedRole,
+    });
+    return;
+  } catch (error) {
+    const typedError = error as CustomError;
+    res.status(500).json({
+      success: false,
+      message: 'Error deactivating role',
+      error: typedError.message,
+    });
+    return;
   }
 };

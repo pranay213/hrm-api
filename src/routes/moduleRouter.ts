@@ -1,20 +1,28 @@
 import express from 'express';
-
 import { authorize } from '../middlewares/authMiddleware';
 import {
   createModule,
-  updateModule,
-  getAllModules,
+  deleteModule,
   getModuleById,
+  getModules,
+  updateModule,
 } from '../controllers/moduleController';
 
-const router: any = express.Router();
+const router = express.Router();
 
-router.post('/add', authorize(['SUPER_ADMIN']), createModule);
-router.get('/', authorize(['SUPER_ADMIN', 'ADMIN']), getAllModules);
+// Create a new module
+router.post('/add', createModule);
 
-router.patch('/:id', authorize(['SUPER_ADMIN']), updateModule);
-router.get('/:id', authorize(['SUPER_ADMIN']), getModuleById);
-// router.delete('/:roleId', authorize(['SUPER_ADMIN']), deleteRole);
+// Retrieve all modules
+router.get('/', getModules);
+
+// Retrieve a single module by ID
+router.get('/:id', getModuleById);
+
+// Update a module by ID
+router.patch('/:id', updateModule);
+
+// Delete a module by ID
+router.delete('/:id', deleteModule);
 
 export default router;

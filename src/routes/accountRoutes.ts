@@ -17,7 +17,7 @@ router.post('/login', login); // Login route
 // // Route for creating a super admin
 router.post('/create-super-admin', createSuperAdmin); // Create super admin route
 
-router.get('/logout', authenticate, logoutSingleDevice); // Login route
+router.get('/logout', logoutSingleDevice); // Login route
 
 router.get(
   '/logout-all',

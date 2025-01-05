@@ -1,12 +1,27 @@
+import {
+  createRole,
+  deactivateRole,
+  getAllRoles,
+  getRoleById,
+  updateRole,
+} from '../controllers/roleController';
 import express from 'express';
-import { createRole, getRoles } from '../controllers/roleController';
-import { authorize } from '../middlewares/authMiddleware';
 
-const router: any = express.Router();
+const router = express.Router();
 
-router.post('/add', authorize(['SUPER_ADMIN']), createRole);
-router.get('/', authorize(['SUPER_ADMIN', 'ADMIN']), getRoles);
-// router.put('/:roleId', authorize(['SUPER_ADMIN']), updateRole);
-// router.delete('/:roleId', authorize(['SUPER_ADMIN']), deleteRole);
+// Create a new role
+router.post('/add', createRole);
+
+// Get all roles
+router.get('/', getAllRoles);
+
+// Get a single role by ID
+router.get('/:id', getRoleById);
+
+// Update a role by ID
+router.patch('/:id', updateRole);
+
+// Deactivate a role (soft delete) by ID
+router.patch('/roles/:id/deactivate', deactivateRole);
 
 export default router;

@@ -1,165 +1,208 @@
 import Module from '../models/Modules';
 import { Request, Response } from 'express';
-// Adjust the path to your Module model
 
-// Create a new module
 // Create a new module
 export const createModule = async (
   req: Request,
   res: Response,
 ): Promise<void> => {
   try {
-    const { name, backendPath, frontEndPath, parentId, metadata } = req.body;
-    if (!name || !backendPath || !frontEndPath) {
-      res
-        .status(400)
-        .json({ success: false, message: 'All fields are required' });
-      return;
-    }
-    const newModule = new Module({
-      name,
-      backendPath,
-      frontEndPath,
-      parent: parentId || null,
-      metadata: metadata || {},
-    });
+    const { name, icon, status } = req.body;
 
-    const savedModule = await newModule.save();
-
-    // Update the parent's children array if a parentId is provided
-    if (parentId) {
-      await Module.findByIdAndUpdate(parentId, {
-        $push: { children: savedModule._id },
-      });
-    }
-
-    res.status(201).json({
-      success: true,
-      message: 'Module created Successfully',
-      data: savedModule,
-    });
-  } catch (error: any) {
-    res.status(500).json({
-      success: false,
-      message: 'Module creation failed',
-      error: error.message,
-    });
-  }
-};
-
-export const updateModule = async (
-  req: Request,
-  res: Response,
-): Promise<void> => {
-  try {
-    const id = req.params.id;
-    const { name, backendPath, frontEndPath, parentId, metadata, status } =
-      req.body;
-    if (!id) {
+    // Validation
+    if (!name) {
       res.status(400).json({
         success: false,
-        message: 'Module Id Not Found',
+        message: 'Name is required',
       });
       return;
     }
 
-    const findModule = await Module.findById(id);
-    if (!findModule) {
-      res.status(404).json({
+    const existingModule = await Module.findOne({ name });
+    if (existingModule) {
+      res.status(400).json({
         success: false,
-        message: 'Module Not Found',
+        message: 'Module with this name already exists',
       });
+      return;
     }
 
-    await Module.findByIdAndUpdate(
-      id,
-      { name, frontEndPath, backendPath, parent: parentId, metadata, status },
-      {
-        new: true,
-      },
-    );
-    res.status(200).json({
+    const newModule = new Module({ name, icon, status });
+    const savedModule = await newModule.save();
+    res.status(201).json({
       success: true,
-      message: 'Module updated Successfully',
+      message: 'Module created successfully',
+      data: savedModule,
     });
+    return;
   } catch (error: any) {
     res.status(500).json({
       success: false,
-      message: 'Module creation failed',
+      message: 'Failed to create module',
       error: error.message,
     });
+    return;
   }
 };
 
 // Get all modules
-// Helper function to recursively build the module hierarchy
-const buildHierarchy = async (parentId: string | null = null): Promise<any> => {
-  let mongoQuery: any;
-  if (parentId) mongoQuery.parent = parentId;
-  const modules = await Module.find(mongoQuery).lean();
-
-  return Promise.all(
-    modules.map(async (module: any) => ({
-      ...module,
-      children: await buildHierarchy(module._id), // Recursively fetch children
-    })),
-  );
-};
-
-// Retrieve all modules in a nested structure
-export const getAllModules = async (
+export const getModules = async (
   req: Request,
   res: Response,
 ): Promise<void> => {
   try {
-    // Helper function to recursively build the module hierarchy
-    const buildHierarchy = async (
-      parentId: string | null = null,
-    ): Promise<any> => {
-      const modules = await Module.find({ parent: parentId }).lean(); // Fetch modules with the specified parent
-      return Promise.all(
-        modules.map(async (module: any) => ({
-          ...module,
-          children: await buildHierarchy(module._id), // Recursively fetch children
-        })),
-      );
-    };
-
-    // Build the hierarchy starting from the root modules (parent = null)
-    const hierarchy = await buildHierarchy(null);
-
+    const modules = await Module.find();
     res.status(200).json({
       success: true,
-      message: 'Fetched modules successfully',
-      data: hierarchy,
+      message: 'Modules retrieved successfully',
+      data: modules,
     });
+    return;
   } catch (error: any) {
     res.status(500).json({
       success: false,
-      message: 'Fetching modules failed',
+      message: 'Failed to fetch modules',
       error: error.message,
     });
+    return;
   }
 };
 
-// Get a specific module by name
-export const getModuleById = async (req: Request, res: Response) => {
+// Get a single module by ID
+export const getModuleById = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
   try {
     const { id } = req.params;
+
+    // Validation
+    if (!id || id.trim() === '') {
+      res.status(400).json({
+        success: false,
+        message: 'Module ID is required',
+      });
+      return;
+    }
+
     const module = await Module.findById(id);
     if (!module) {
-      return res
-        .status(404)
-        .json({ success: false, message: 'Module not found' });
+      res.status(404).json({
+        success: false,
+        message: 'Module not found',
+      });
+      return;
     }
-    res
-      .status(200)
-      .json({ success: true, message: 'Module Retrieved', data: module });
+    res.status(200).json({
+      success: true,
+      message: 'Module retrieved successfully',
+      data: module,
+    });
+    return;
   } catch (error: any) {
     res.status(500).json({
       success: false,
       message: 'Failed to fetch module',
       error: error.message,
     });
+    return;
+  }
+};
+
+// Update a module by ID
+export const updateModule = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  try {
+    const { id } = req.params;
+    const { name, icon, status } = req.body;
+
+    // Validation
+    if (!id || id.trim() === '') {
+      res.status(400).json({
+        success: false,
+        message: 'Module ID is required',
+      });
+      return;
+    }
+    if (name) {
+      const existingModule = await Module.findOne({ name, _id: { $ne: id } });
+      if (existingModule) {
+        res.status(400).json({
+          success: false,
+          message: 'Another module with this name already exists',
+        });
+        return;
+      }
+    }
+
+    const updatedModule = await Module.findByIdAndUpdate(
+      id,
+      { name, icon, status },
+      { new: true, runValidators: true },
+    );
+
+    if (!updatedModule) {
+      res.status(404).json({
+        success: false,
+        message: 'Module not found',
+      });
+      return;
+    }
+    res.status(200).json({
+      success: true,
+      message: 'Module updated successfully',
+      data: updatedModule,
+    });
+    return;
+  } catch (error: any) {
+    res.status(500).json({
+      success: false,
+      message: 'Failed to update module',
+      error: error.message,
+    });
+    return;
+  }
+};
+
+// Delete a module by ID
+export const deleteModule = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
+  try {
+    const { id } = req.params;
+
+    // Validation
+    if (!id || id.trim() === '') {
+      res.status(400).json({
+        success: false,
+        message: 'Module ID is required',
+      });
+      return;
+    }
+
+    const deletedModule = await Module.findByIdAndDelete(id);
+    if (!deletedModule) {
+      res.status(404).json({
+        success: false,
+        message: 'Module not found',
+      });
+      return;
+    }
+    res.status(200).json({
+      success: true,
+      message: 'Module deleted successfully',
+      data: deletedModule,
+    });
+    return;
+  } catch (error: any) {
+    res.status(500).json({
+      success: false,
+      message: 'Failed to delete module',
+      error: error.message,
+    });
+    return;
   }
 };

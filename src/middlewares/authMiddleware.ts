@@ -1,8 +1,10 @@
+import Module from '../models/Modules';
+import Account from '../models/Accounts';
 import { loginVerify } from '../utils/sessions';
 import { Request, Response, NextFunction } from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 
-interface JwtUserPayload extends JwtPayload {
+export interface JwtUserPayload extends JwtPayload {
   id: string;
   email: string;
   roleType: string;
@@ -33,7 +35,34 @@ export const authenticate = async (
     }
     const decoded = jwt.verify(token, secret) as JwtUserPayload;
     req.user = decoded;
-    loginVerify(req, res, next);
+    const findUser = await Account.findOne({ _id: req.user.id });
+    const findModules = await Module.find(
+      {
+        _id: {
+          $in: findUser?.permissions,
+        },
+      },
+      {
+        name: 1,
+        _id: 0,
+      },
+    );
+    const dbPermissions = findModules.map((each) => each?.name);
+
+    // Check if the user has access to the requested route
+    const requestedModule = req.baseUrl.split('/')[2]?.toLowerCase();
+    console.log('requestredRoute', requestedModule);
+    console.log('userPermissions', dbPermissions);
+
+    if (!requestedModule || !dbPermissions.includes(requestedModule)) {
+      res.status(403).json({
+        success: false,
+        message: 'you are not access to this route',
+        redirect: true,
+      });
+      return;
+    }
+    await loginVerify(req, res, next);
   } catch (err: any) {
     console.error('Token verification failed:', err);
     res.status(400).json({
@@ -52,15 +81,14 @@ export const authorize = (roles: string[]) => {
     res: Response,
     next: NextFunction,
   ): void => {
-    console.log('user---', req.user);
     if (!req.user || !roles.includes(req.user.role)) {
       res.status(403).json({
         success: false,
-        message: 'Access denied. No token provided.',
-        sessionExpired: true,
+        message: 'Access denied. You are unable to access this resource.',
       });
       return; // Ensure the function exits after sending the response
     }
+
     next(); // User has the required role, proceed
   };
 };

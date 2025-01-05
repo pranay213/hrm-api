@@ -23,7 +23,6 @@ export const loginVerify = async (
     }
 
     const session = await SessionsModel.findById(sessionId);
-    console.log('session', session);
     if (!session) {
       return res.status(401).json({
         success: false,

@@ -1,26 +1,47 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
 interface ICompany extends Document {
-  name: string;
-  accountType: string;
-  createdBy: mongoose.Types.ObjectId; // Refers to the SUPER_ADMIN
+  name: string; // Company name
+  accountType: mongoose.Types.ObjectId; // Refers to the Role model
+  createdBy: mongoose.Types.ObjectId; // Refers to the User model
+  permissions: mongoose.Types.ObjectId[]; // List of Module IDs specific to the company
+  isActive: boolean; // Status of the company
 }
 
-const departmentSchema = new Schema({
-  name: { type: String, required: true },
-  permissions: [],
-  children: [{ type: Schema.Types.ObjectId, ref: 'Department' }],
-  people: [],
-});
+const CompanySchema: Schema = new Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
+    },
+    address: {
+      type: String,
+      required: true,
+    },
+    createdBy: {
+      type: mongoose.Types.ObjectId,
+      required: true,
+      ref: 'Admin', // Refers to the User model
+    },
+    permissions: {
+      type: [mongoose.Types.ObjectId], // Array of Module IDs specific to the company
+      ref: 'Module', // Refers to the Module collection
+    },
+    logo: {
+      type: String,
+    },
 
-const CompanySchema: Schema = new Schema({
-  name: { type: String, required: true, unique: true },
-  createdBy: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  departments: {
-    type: Array,
-    ref: departmentSchema,
+    status: {
+      type: Boolean,
+      default: true,
+    },
   },
-});
+  {
+    timestamps: true, // Automatically includes createdAt and updatedAt
+  },
+);
 
 const Company = mongoose.model<ICompany>('Company', CompanySchema);
 

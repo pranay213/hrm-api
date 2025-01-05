@@ -1,9 +1,11 @@
 import { Request, Response } from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import Account from '../models/Accounts';
+import Account, { IAccount } from '../models/Accounts';
 import dotenv from 'dotenv';
 import SessionsModel from '../models/Sessions';
+import Role from '../models/Role';
+import Module from '../models/Modules';
 
 dotenv.config();
 const JWT_SECRET_KEY: any = process.env.JWT_SECRET_KEY;
@@ -17,6 +19,84 @@ export const createSuperAdmin = async (req: Request, res: Response) => {
 
     // Validate input fields
     if (!firstName || !lastName || !email || !password) {
+      return res
+        .status(400)
+        .json({ success: false, message: 'All fields are required' });
+    }
+
+    // Check if the email already exists
+    const existingAccount = await Account.findOne({ email });
+    if (existingAccount) {
+      return res
+        .status(400)
+        .json({ success: false, message: 'Email already in use' });
+    }
+
+    // Hash the password
+    const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
+
+    // Create a new super admin account
+    const roleId = await Role.findOne({ name: 'SUPER_ADMIN' }).select('_id');
+    const modules = await Module.find({}).select('_id name');
+    console.log('modules', modules);
+    const newSuperAdmin = new Account({
+      firstName,
+      lastName,
+      email,
+      password: hashedPassword,
+      roleType: roleId, // Explicitly set role type
+      permissions: modules,
+    });
+
+    await newSuperAdmin.save();
+
+    // Generate JWT token
+
+    if (!JWT_SECRET_KEY) {
+      throw new Error(
+        'JWT_SECRET is not configured in the environment variables',
+      );
+    }
+
+    const token = jwt.sign(
+      {
+        id: newSuperAdmin._id,
+        email: newSuperAdmin.email,
+        role: newSuperAdmin.roleType,
+      },
+      JWT_SECRET_KEY,
+      { expiresIn: '1h' },
+    );
+
+    // Respond with the created account and token
+    res.status(201).json({
+      success: true,
+      message: 'Super Admin account created successfully',
+      account: {
+        id: newSuperAdmin._id,
+        firstName: newSuperAdmin.firstName,
+        lastName: newSuperAdmin.lastName,
+        email: newSuperAdmin.email,
+        roleType: newSuperAdmin.roleType,
+      },
+      token,
+    });
+  } catch (error: any) {
+    console.error('Error creating super admin:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to create super admin account',
+      error: error.message,
+    });
+  }
+};
+
+export const createAccount = async (req: Request, res: Response) => {
+  try {
+    const { firstName, lastName, email, password } = req.body;
+
+    // Validate input fields
+    if (!firstName || !email || !password) {
       return res
         .status(400)
         .json({ success: false, message: 'All fields are required' });
@@ -95,7 +175,7 @@ export const login = async (req: Request, res: Response): Promise<Response> => {
         message: 'Please Enter Your Credentials',
       });
     }
-    const account = await Account.findOne({ email });
+    const account: any = await Account.findOne({ email });
     if (!account) {
       return res.status(404).json({
         success: false,
@@ -108,7 +188,6 @@ export const login = async (req: Request, res: Response): Promise<Response> => {
         .status(401)
         .json({ success: false, message: 'Invalid Email or Password' });
     }
-
     // Create session record
     const session = new SessionsModel({
       admin_id: account._id,
@@ -123,15 +202,31 @@ export const login = async (req: Request, res: Response): Promise<Response> => {
 
     await session.save(); // Save the session to the database
 
+    const allPermissions = await Module.find({
+      _id: { $in: account.permissions }, // Convert to ObjectId if IDs are in ObjectId format
+    });
+
+    const filterPermissions = allPermissions.map((each) => {
+      return {
+        _id: each._id,
+        name: each.name,
+        status: each?.status,
+      };
+    });
+
+    const roleType = await Role.findById(account.roleType);
+    console.log('roleType-----', roleType);
+
     const token = jwt.sign(
       {
         id: account._id,
         email: account.email,
         role: account.roleType,
         sessionId: session._id, // Store session ID in the token
+        permissions: filterPermissions,
       },
       JWT_SECRET_KEY,
-      { expiresIn: '1h' },
+      { expiresIn: '1d' },
     );
 
     return res.status(200).json({
@@ -143,7 +238,8 @@ export const login = async (req: Request, res: Response): Promise<Response> => {
           email: account.email,
           firstName: account.firstName,
           lastName: account.lastName,
-          roleType: account.roleType,
+          roleType: roleType?.name,
+          permissions: filterPermissions,
         },
         token,
       },
