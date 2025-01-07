@@ -75,32 +75,11 @@ export const createCompany = async (req: any, res: Response): Promise<void> => {
       return;
     }
 
-    // Upload logo to Cloudinary
-
-    // Create the company
-    const company = new Company({
-      name,
-      email,
-      address,
-      createdBy,
-      permissions, // Assign permissions array
-      logo: logo, // Save Cloudinary URL
-    });
-
-    const newCompany = await company.save();
-    if (!newCompany) {
-      res.status(400).json({
-        success: false,
-        message: 'Company creation failed',
-      });
-      return;
-    }
-
+    // Creating Account
     // Hash the password
     const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
     const roleId = await Role.findOne({ name: 'COMPANY' }).select('_id');
 
-    // Create a new super admin account
     const newAccount = new Account({
       firstName: name,
       lastName: ' ',
@@ -117,6 +96,28 @@ export const createCompany = async (req: any, res: Response): Promise<void> => {
       });
       return;
     }
+
+    // Create the company
+    const company = new Company({
+      name,
+      email,
+      address,
+      createdBy: req.user.id,
+      accountId: newAccount._id,
+      permissions, // Assign permissions array
+      logo: logo, // Save Cloudinary URL
+    });
+
+    const newCompany = await company.save();
+    if (!newCompany) {
+      res.status(400).json({
+        success: false,
+        message: 'Company creation failed',
+      });
+      return;
+    }
+
+    // Create a new super admin account
 
     res.status(201).json({
       success: true,
@@ -163,7 +164,9 @@ export const getCompanyById = async (
 ): Promise<void> => {
   try {
     const { id } = req.params;
-    const company = await Company.findById(id);
+    const company: any = await Company.findById(id)
+      .populate('accountId', 'email')
+      .lean();
 
     if (!company) {
       res.status(404).json({
@@ -176,7 +179,10 @@ export const getCompanyById = async (
     res.status(200).json({
       success: true,
       message: 'Company fetched successfully',
-      data: company,
+      data: {
+        ...company,
+        email: company.accountId?.email,
+      },
     });
     return;
   } catch (error) {

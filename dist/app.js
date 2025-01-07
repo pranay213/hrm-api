@@ -16,6 +16,7 @@ const express_1 = __importDefault(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const swagger_ui_express_1 = __importDefault(require("swagger-ui-express"));
 const yamljs_1 = __importDefault(require("yamljs"));
+const companyRoutes_1 = __importDefault(require("./routes/companyRoutes")); // Company routes
 const roleRoutes_1 = __importDefault(require("./routes/roleRoutes")); //Role routes
 const moduleRouter_1 = __importDefault(require("./routes/moduleRouter")); //Role routes
 const accountRoutes_1 = __importDefault(require("./routes/accountRoutes")); //account routes
@@ -35,7 +36,14 @@ app.use((0, cors_1.default)());
 // Middleware to parse JSON bodies
 app.use(express_1.default.json());
 app.use((req, res, next) => {
-    logger_1.default.info(`${req.method} ${req.url} - ${JSON.stringify(req.body)}`);
+    const { method, url, headers, body } = req;
+    const startTime = new Date();
+    logger_1.default.info(`Request: ${method} ${url} - Headers: ${headers.authorization} -Body: ${JSON.stringify(body)}`);
+    // Capture response details
+    const originalSend = res.send;
+    res.send = function (body) {
+        return originalSend.call(this, body);
+    };
     next();
 });
 // Serve Swagger API documentation
@@ -56,10 +64,10 @@ app.get('/api/initialize', (req, res) => __awaiter(void 0, void 0, void 0, funct
     try {
         // Provide default super admin data
         req.body = {
-            firstName: 'Super',
-            lastName: 'Admin',
-            email: 'admin@example.com',
-            password: 'admin',
+            firstName: 'Pranay',
+            lastName: 'Kodam',
+            email: 'pranay@kodam.in',
+            password: 'test',
         };
         // Call the createSuperAdmin controller
         yield (0, accountsController_1.createSuperAdmin)(req, res);
@@ -77,7 +85,7 @@ app.use('/api/', accountRoutes_1.default); // Uncomment and add roleRoutes for r
 app.use('/api/module', authMiddleware_1.authenticate, moduleRouter_1.default); // Uncomment and add roleRoutes for role management
 app.use('/api/role', authMiddleware_1.authenticate, roleRoutes_1.default); // Uncomment and add roleRoutes for role management
 // Secured Routes
-// app.use('/api/companies', authenticate, companyRoutes); // Routes for companies
+app.use('/api/company', authMiddleware_1.authenticate, companyRoutes_1.default); // Routes for companies
 // app.use('/api/branches', authenticate, branchRoutes); // Routes for branches
 // app.use('/api/employees', authenticate, employeeRoutes); // Routes for employees
 exports.default = app;

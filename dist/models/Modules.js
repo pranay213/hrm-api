@@ -1,4 +1,5 @@
 "use strict";
+// import mongoose, { Schema, Document } from 'mongoose';
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -33,14 +34,34 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+// interface IModule extends Document {
+//   name: string;
+//   backendPath: string;
+//   frontEndPath: string;
+//   parent?: mongoose.Types.ObjectId; // Reference to the parent module
+//   children?: mongoose.Types.ObjectId[]; // Array of child module references
+//   metadata?: Record<string, any>; // Additional metadata for flexibility
+// }
+// const ModuleSchema: Schema = new Schema(
+//   {
+//     name: { type: String, required: true, unique: true },
+//     backendPath: { type: String, required: true, unique: true },
+//     frontEndPath: { type: String, required: true, unique: true },
+//     icon: { type: String, required: false },
+//     parent: { type: Schema.Types.ObjectId, ref: 'Module', default: null }, // Reference to the parent module
+//     children: [{ type: Schema.Types.ObjectId, ref: 'Module' }], // References to child modules
+//     metadata: { type: Schema.Types.Mixed, default: {} }, // Additional metadata (dynamic fields)
+//     status: { type: Boolean, default: true },
+//   },
+//   { timestamps: true }, // Automatically include createdAt and updatedAt fields
+// );
+// const Module = mongoose.model<IModule>('Module', ModuleSchema);
+// export default Module;
 const mongoose_1 = __importStar(require("mongoose"));
 const ModuleSchema = new mongoose_1.Schema({
     name: { type: String, required: true, unique: true },
-    backendPath: { type: String, required: true, unique: true },
-    frontEndPath: { type: String, required: true, unique: true },
-    parent: { type: mongoose_1.Schema.Types.ObjectId, ref: 'Module', default: null }, // Reference to the parent module
-    children: [{ type: mongoose_1.Schema.Types.ObjectId, ref: 'Module' }], // References to child modules
-    metadata: { type: mongoose_1.Schema.Types.Mixed, default: {} }, // Additional metadata (dynamic fields)
+    icon: { type: String, required: false },
+    status: { type: Boolean, default: true },
 }, { timestamps: true });
 const Module = mongoose_1.default.model('Module', ModuleSchema);
 exports.default = Module;

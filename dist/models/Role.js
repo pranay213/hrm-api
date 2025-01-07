@@ -35,8 +35,22 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importStar(require("mongoose"));
 const RoleSchema = new mongoose_1.Schema({
-    name: { type: String, required: true, unique: true },
-    permissions: { type: Array, ref: 'Module' },
+    name: {
+        type: String,
+        required: true,
+        unique: true,
+        trim: true,
+    },
+    description: {
+        type: String,
+        trim: true,
+    },
+    status: {
+        type: Boolean,
+        default: true,
+    },
+}, {
+    timestamps: true, // Automatically includes createdAt and updatedAt
 });
 const Role = mongoose_1.default.model('Role', RoleSchema);
 exports.default = Role;

@@ -35,9 +35,39 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importStar(require("mongoose"));
 const CompanySchema = new mongoose_1.Schema({
-    name: { type: String, required: true, unique: true },
-    accountType: { type: String, required: true },
-    createdBy: { type: mongoose_1.Schema.Types.ObjectId, ref: 'User', required: true },
+    name: {
+        type: String,
+        required: true,
+        unique: true,
+        trim: true,
+    },
+    accountId: {
+        type: mongoose_1.default.Types.ObjectId,
+        required: true,
+        ref: 'Account', // Refers to the Account model
+    },
+    address: {
+        type: String,
+        required: true,
+    },
+    createdBy: {
+        type: mongoose_1.default.Types.ObjectId,
+        required: true,
+        ref: 'Admin', // Refers to the User model
+    },
+    permissions: {
+        type: [mongoose_1.default.Types.ObjectId], // Array of Module IDs specific to the company
+        ref: 'Module', // Refers to the Module collection
+    },
+    logo: {
+        type: String,
+    },
+    status: {
+        type: Boolean,
+        default: true,
+    },
+}, {
+    timestamps: true, // Automatically includes createdAt and updatedAt
 });
 const Company = mongoose_1.default.model('Company', CompanySchema);
 exports.default = Company;

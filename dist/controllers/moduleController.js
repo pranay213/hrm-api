@@ -12,81 +12,94 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getModuleByName = exports.getAllModules = exports.createModule = void 0;
+exports.deleteModule = exports.updateModule = exports.getModuleById = exports.getModules = exports.createModule = void 0;
 const Modules_1 = __importDefault(require("../models/Modules"));
-// Adjust the path to your Module model
-// Create a new module
 // Create a new module
 const createModule = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { name, backendPath, frontEndPath, parentId, metadata } = req.body;
-        const newModule = new Modules_1.default({
-            name,
-            backendPath,
-            frontEndPath,
-            parent: parentId || null,
-            metadata: metadata || {},
-        });
-        const savedModule = yield newModule.save();
-        // Update the parent's children array if a parentId is provided
-        if (parentId) {
-            yield Modules_1.default.findByIdAndUpdate(parentId, {
-                $push: { children: savedModule._id },
+        const { name, icon, status } = req.body;
+        // Validation
+        if (!name) {
+            res.status(400).json({
+                success: false,
+                message: 'Name is required',
             });
+            return;
         }
+        const existingModule = yield Modules_1.default.findOne({ name });
+        if (existingModule) {
+            res.status(400).json({
+                success: false,
+                message: 'Module with this name already exists',
+            });
+            return;
+        }
+        const newModule = new Modules_1.default({ name, icon, status });
+        const savedModule = yield newModule.save();
         res.status(201).json({
             success: true,
-            message: 'Module created Successfully',
+            message: 'Module created successfully',
             data: savedModule,
         });
+        return;
     }
     catch (error) {
         res.status(500).json({
             success: false,
-            message: 'Module creation failed',
+            message: 'Failed to create module',
             error: error.message,
         });
+        return;
     }
 });
 exports.createModule = createModule;
 // Get all modules
-// Helper function to recursively build the module hierarchy
-const buildHierarchy = (...args_1) => __awaiter(void 0, [...args_1], void 0, function* (parentId = null) {
-    const modules = yield Modules_1.default.find({ parent: parentId }).lean();
-    return Promise.all(modules.map((module) => __awaiter(void 0, void 0, void 0, function* () {
-        return (Object.assign(Object.assign({}, module), { children: yield buildHierarchy(module._id) }));
-    })));
-});
-// Retrieve all modules in a nested structure
-const getAllModules = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+const getModules = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const hierarchy = yield buildHierarchy();
+        const modules = yield Modules_1.default.find();
         res.status(200).json({
-            succees: true,
-            message: 'feched modules successfully',
-            data: hierarchy,
+            success: true,
+            message: 'Modules retrieved successfully',
+            data: modules,
         });
+        return;
     }
     catch (error) {
         res.status(500).json({
             success: false,
-            message: 'fetching modules Failed',
+            message: 'Failed to fetch modules',
             error: error.message,
         });
+        return;
     }
 });
-exports.getAllModules = getAllModules;
-// Get a specific module by name
-const getModuleByName = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+exports.getModules = getModules;
+// Get a single module by ID
+const getModuleById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { name } = req.params;
-        const module = yield Modules_1.default.findOne({ name });
-        if (!module) {
-            return res
-                .status(404)
-                .json({ success: false, message: 'Module not found' });
+        const { id } = req.params;
+        // Validation
+        if (!id || id.trim() === '') {
+            res.status(400).json({
+                success: false,
+                message: 'Module ID is required',
+            });
+            return;
         }
-        res.status(200).json({ module });
+        const module = yield Modules_1.default.findById(id);
+        if (!module) {
+            res.status(404).json({
+                success: false,
+                message: 'Module not found',
+            });
+            return;
+        }
+        res.status(200).json({
+            success: true,
+            message: 'Module retrieved successfully',
+            data: module,
+        });
+        return;
     }
     catch (error) {
         res.status(500).json({
@@ -94,6 +107,92 @@ const getModuleByName = (req, res) => __awaiter(void 0, void 0, void 0, function
             message: 'Failed to fetch module',
             error: error.message,
         });
+        return;
     }
 });
-exports.getModuleByName = getModuleByName;
+exports.getModuleById = getModuleById;
+// Update a module by ID
+const updateModule = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const { id } = req.params;
+        const { name, icon, status } = req.body;
+        // Validation
+        if (!id || id.trim() === '') {
+            res.status(400).json({
+                success: false,
+                message: 'Module ID is required',
+            });
+            return;
+        }
+        if (name) {
+            const existingModule = yield Modules_1.default.findOne({ name, _id: { $ne: id } });
+            if (existingModule) {
+                res.status(400).json({
+                    success: false,
+                    message: 'Another module with this name already exists',
+                });
+                return;
+            }
+        }
+        const updatedModule = yield Modules_1.default.findByIdAndUpdate(id, { name, icon, status }, { new: true, runValidators: true });
+        if (!updatedModule) {
+            res.status(404).json({
+                success: false,
+                message: 'Module not found',
+            });
+            return;
+        }
+        res.status(200).json({
+            success: true,
+            message: 'Module updated successfully',
+            data: updatedModule,
+        });
+        return;
+    }
+    catch (error) {
+        res.status(500).json({
+            success: false,
+            message: 'Failed to update module',
+            error: error.message,
+        });
+        return;
+    }
+});
+exports.updateModule = updateModule;
+// Delete a module by ID
+const deleteModule = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const { id } = req.params;
+        // Validation
+        if (!id || id.trim() === '') {
+            res.status(400).json({
+                success: false,
+                message: 'Module ID is required',
+            });
+            return;
+        }
+        const deletedModule = yield Modules_1.default.findByIdAndDelete(id);
+        if (!deletedModule) {
+            res.status(404).json({
+                success: false,
+                message: 'Module not found',
+            });
+            return;
+        }
+        res.status(200).json({
+            success: true,
+            message: 'Module deleted successfully',
+            data: deletedModule,
+        });
+        return;
+    }
+    catch (error) {
+        res.status(500).json({
+            success: false,
+            message: 'Failed to delete module',
+            error: error.message,
+        });
+        return;
+    }
+});
+exports.deleteModule = deleteModule;

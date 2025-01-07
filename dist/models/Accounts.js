@@ -36,10 +36,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importStar(require("mongoose"));
 const AccountSchema = new mongoose_1.Schema({
     roleType: {
-        type: String,
+        type: mongoose_1.default.Types.ObjectId,
         required: true,
-        ref: 'role',
-        default: 'superadmin',
+        ref: 'Role',
     },
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
@@ -47,6 +46,10 @@ const AccountSchema = new mongoose_1.Schema({
     password: { type: String, required: true },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
+    permissions: {
+        type: [mongoose_1.default.Types.ObjectId], // Array of Module IDs specific to the company
+        ref: 'Module', // Refers to the Module collection
+    },
 });
 // Password hashing middleware
 // Generate JWT token

@@ -12,63 +12,156 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRoles = exports.createRole = void 0;
-const Role_1 = __importDefault(require("../models/Role")); // Assuming the Role model is in models/Role
-const Modules_1 = __importDefault(require("../models/Modules"));
+exports.deactivateRole = exports.updateRole = exports.getRoleById = exports.getAllRoles = exports.createRole = void 0;
+const Role_1 = __importDefault(require("../models/Role"));
+// Create a new role
 const createRole = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { name, checkedModules } = req.body;
-        // Validate input
-        if (!name || !Array.isArray(checkedModules)) {
-            return res.status(400).json({
-                error: 'Invalid input data. Name and checkedModules are required.',
-            });
-        }
-        // Check if role with the same name already exists
+        const { name, description, isActive } = req.body;
         const existingRole = yield Role_1.default.findOne({ name });
         if (existingRole) {
-            return res
-                .status(409)
-                .json({ error: 'Role with the same name already exists' });
+            res.status(400).json({
+                success: false,
+                message: 'Role with this name already exists',
+            });
+            return;
         }
-        // Get all modules
-        const allModules = yield Modules_1.default.find();
-        // Create permissions object: true for checkedModules, false for others
-        const permissions = allModules.map((module) => ({
-            module: module._id,
-            permission: checkedModules.includes(module._id.toString()),
-        }));
-        // Create and save the role
-        const newRole = yield Role_1.default.create({ name, permissions });
+        const role = new Role_1.default({
+            name,
+            description,
+            isActive: isActive !== undefined ? isActive : true,
+        });
+        yield role.save();
         res.status(201).json({
             success: true,
             message: 'Role created successfully',
-            data: newRole,
+            data: role,
         });
+        return;
     }
     catch (error) {
+        const typedError = error;
         res.status(500).json({
             success: false,
-            message: 'Failed to create role',
-            error: error.message,
+            message: 'Error creating role',
+            error: typedError.message,
         });
+        return;
     }
 });
 exports.createRole = createRole;
-const getRoles = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+// Get all roles
+const getAllRoles = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const findRoles = yield Role_1.default.find();
-        res.status(200).send({
+        const roles = yield Role_1.default.find();
+        res.status(200).json({
             success: true,
-            message: 'roles fetched',
-            data: findRoles,
+            message: 'Roles fetched successfully',
+            data: roles,
         });
+        return;
     }
     catch (error) {
+        const typedError = error;
         res.status(500).json({
             success: false,
-            error: error.message,
+            message: 'Error fetching roles',
+            error: typedError.message,
         });
+        return;
     }
 });
-exports.getRoles = getRoles;
+exports.getAllRoles = getAllRoles;
+// Get a single role by ID
+const getRoleById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const { id } = req.params;
+        const role = yield Role_1.default.findById(id);
+        if (!role) {
+            res.status(404).json({
+                success: false,
+                message: 'Role not found',
+            });
+            return;
+        }
+        res.status(200).json({
+            success: true,
+            message: 'Role fetched successfully',
+            data: role,
+        });
+        return;
+    }
+    catch (error) {
+        const typedError = error;
+        res.status(500).json({
+            success: false,
+            message: 'Error fetching role',
+            error: typedError.message,
+        });
+        return;
+    }
+});
+exports.getRoleById = getRoleById;
+// Update a role by ID
+const updateRole = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const { id } = req.params;
+        const updates = req.body;
+        const updatedRole = yield Role_1.default.findByIdAndUpdate(id, updates, {
+            new: true,
+        });
+        if (!updatedRole) {
+            res.status(404).json({
+                success: false,
+                message: 'Role not found',
+            });
+            return;
+        }
+        res.status(200).json({
+            success: true,
+            message: 'Role updated successfully',
+            data: updatedRole,
+        });
+        return;
+    }
+    catch (error) {
+        const typedError = error;
+        res.status(500).json({
+            success: false,
+            message: 'Error updating role',
+            error: typedError.message,
+        });
+        return;
+    }
+});
+exports.updateRole = updateRole;
+// Delete (deactivate) a role by ID
+const deactivateRole = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const { id } = req.params;
+        const deactivatedRole = yield Role_1.default.findByIdAndUpdate(id, { isActive: false }, { new: true });
+        if (!deactivatedRole) {
+            res.status(404).json({
+                success: false,
+                message: 'Role not found',
+            });
+            return;
+        }
+        res.status(200).json({
+            success: true,
+            message: 'Role deactivated successfully',
+            data: deactivatedRole,
+        });
+        return;
+    }
+    catch (error) {
+        const typedError = error;
+        res.status(500).json({
+            success: false,
+            message: 'Error deactivating role',
+            error: typedError.message,
+        });
+        return;
+    }
+});
+exports.deactivateRole = deactivateRole;

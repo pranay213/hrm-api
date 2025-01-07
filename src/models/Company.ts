@@ -2,10 +2,13 @@ import mongoose, { Schema, Document } from 'mongoose';
 
 interface ICompany extends Document {
   name: string; // Company name
-  accountType: mongoose.Types.ObjectId; // Refers to the Role model
+  accountId: mongoose.Types.ObjectId; // Refers to the Account model
   createdBy: mongoose.Types.ObjectId; // Refers to the User model
   permissions: mongoose.Types.ObjectId[]; // List of Module IDs specific to the company
   isActive: boolean; // Status of the company
+  account?: mongoose.Types.ObjectId; // Optional reference for population
+  address: string; // Company address
+  logo: string; // Company logo URL
 }
 
 const CompanySchema: Schema = new Schema(
@@ -15,6 +18,11 @@ const CompanySchema: Schema = new Schema(
       required: true,
       unique: true,
       trim: true,
+    },
+    accountId: {
+      type: mongoose.Types.ObjectId,
+      required: true,
+      ref: 'Account', // Refers to the Account model
     },
     address: {
       type: String,
@@ -32,7 +40,6 @@ const CompanySchema: Schema = new Schema(
     logo: {
       type: String,
     },
-
     status: {
       type: Boolean,
       default: true,
