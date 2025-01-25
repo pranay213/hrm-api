@@ -1,10 +1,17 @@
 version: '3.8'
 
+networks:
+  nginx_network:
+    name: nginx_network
+    driver: bridge
+    external: true
+
 services:
   api:
+    container_name: ${DOCKER_CONTAINER_NAME}
     build: .
     ports:
-      - "8000:8000"
+      # - "8000:8000"
     env_file:
       - .env
     environment:
@@ -16,3 +23,7 @@ services:
       - CLOUDINARY_API_KEY=${CLOUDINARY_API_KEY}
       - CLOUDINARY_API_SECRET=${CLOUDINARY_API_SECRET}
       - CLOUDINARY_IMAGE_ACCCESS_PATH=${CLOUDINARY_IMAGE_ACCCESS_PATH}
+    networks:
+      - nginx_network
+    restart: always
+     
